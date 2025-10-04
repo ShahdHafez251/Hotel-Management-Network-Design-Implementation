@@ -46,7 +46,7 @@ Each department is placed in a separate VLAN for segmentation:
 - **Dynamic Routing:** Configured **OSPF** to advertise all inter-router networks.  
 - **DHCP Services:** Each router acts as a **DHCP server** for its respective VLANs.  
 - **SSH Remote Login:** All routers configured for **secure SSH access** (v2) instead of Telnet.  
-- **Port Security:** Implemented on IT switch port `fa0/1` to only allow a **Test-PC** (sticky MAC, violation mode = shutdown).  
+- **Port Security:** Implemented on IT switch port `fa0/2` to only allow a **Test-PC** (sticky MAC, violation mode = shutdown).  
 - **Testing:** Verified inter-VLAN communication, OSPF route propagation, DHCP leases, SSH remote login, and security enforcement.
 
 ---
@@ -61,17 +61,5 @@ Each department is placed in a separate VLAN for segmentation:
 ## 🛠️ Tools
 - **Cisco Packet Tracer** (simulation environment)
 
----
-
-## 📷 Screenshots
-(Add your topology screenshots here)
 
 ---
-
-## 🚀 Future Improvements
-- Implement **HSRP/VRRP** for gateway redundancy.  
-- Add **ACLs** for access control between VLANs.  
-- Explore **QoS policies** for prioritizing critical traffic (e.g., VoIP).
-
----
-
